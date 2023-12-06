@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.equalTo;
 public class PostmanTest {
     @Test
     void ShouldReturnBody() {
-
         given()
                 .baseUri("https://postman-echo.com")
                 .body("1976")
@@ -14,7 +13,6 @@ public class PostmanTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("1976"))
-        ;
+                .body("data", equalTo("1976"));
     }
 }
