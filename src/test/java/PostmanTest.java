@@ -8,7 +8,7 @@ public class PostmanTest {
     void ShouldReturnBody() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("1977")
+                .body("1976")
                 .when()
                 .post("/post")
                 .then()
